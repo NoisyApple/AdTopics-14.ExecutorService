@@ -22,15 +22,16 @@ public class CustomExecutorService {
     switch (execMode) {
       case CACHED_THREAD_POOL:
         threadExecutor = Executors.newCachedThreadPool();
-        mode = "CACHED TRHEAD POOL";
+        mode = "CACHED THREAD POOL";
         break;
       case SINGLE_THREAD:
         threadExecutor = Executors.newSingleThreadExecutor();
         mode = "SINGLE THREAD";
         break;
       case DOUBLE_THREAD:
-        threadExecutor = Executors.newFixedThreadPool(2);
-        mode = "FIXED THREAD POOL (SET TO 2)";
+        int amount = 2;
+        threadExecutor = Executors.newFixedThreadPool(amount);
+        mode = "FIXED THREAD POOL (SET TO " + amount + ")";
         break;
     }
 

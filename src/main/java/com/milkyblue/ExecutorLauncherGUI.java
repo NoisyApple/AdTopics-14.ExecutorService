@@ -35,7 +35,7 @@ public class ExecutorLauncherGUI {
     lblAdvice = new JLabel("Select an executor service mode:");
     buttonGroup = new ButtonGroup();
 
-    String[] radioButtonLabels = new String[] { "Cached Thread Pool", "Single Thread", "Fixed Thread Pool (Set to 2)" };
+    String[] radioButtonLabels = new String[] { "Cached Thread Pool", "Single Thread", "Fixed Thread Pool" };
 
     radioButtons = new JRadioButton[radioButtonLabels.length];
 
